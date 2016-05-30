@@ -57,7 +57,7 @@ var divisibleByThree = ___;
 console.log('All numbers divisible by three: ' + divisibleByThree);
 ```
 
-### array.join - zip two arrays together
+### array.concat - zip two arrays together
 
 ```js
 var joined = ___;
