@@ -35,18 +35,11 @@ var odds = numbers.filter(function(x){ return x%2 !== 0});
 console.log('odds numbers: ' + odds);
 ```
 
-### array.join - zip two arrays together (odds & evens)
+### array.filter - find words that contain 'is'
 
 ```js
-var joined = evens.concat(odds);
-console.log('joined even and odd arrays: ' + joined);
-```
-
-### array.sort - sort the `joined` array from smallest to largest
-
-```js
-var sorted = joined.sort(function(l,r){ return l - r });
-console.log('sorted array ' + sorted);
+var wordsWithIs = strings.filter(function(x){ return x.indexOf('is') >= 0});
+console.log('words containing is: ' + wordsWithIs);
 ```
 
 ### array.map - return an array with all numbers cubed (x^3)
@@ -64,11 +57,18 @@ var divisibleByThree = evens.every(function(n){ return n%3 === 0 };
 console.log('All numbers divisible by three: ' + divisibleByThree);
 ```
 
-### array.filter - find words that contain 'is'
+### array.concat - zip two arrays together
 
 ```js
-var wordsWithIs = strings.filter(function(x){ return x.indexOf('is') >= 0});
-console.log('words containing is: ' + wordsWithIs);
+var joined = evens.concat(odds);
+console.log('joined even and odd arrays: ' + joined);
+```
+
+### array.sort - sort the `joined` array from smallest to largest
+
+```js
+var sorted = joined.sort(function(l,r){ return l - r });
+console.log('sorted array ' + sorted);
 ```
 
 ### remove the last word from `strings`
